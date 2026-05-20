@@ -6,7 +6,6 @@ substitutions:
   _REGION: us-central1 # Enter your region
   _SERVICE_NAME: inventory-api
   _REPOSITORY: cloud-run-source-deploy
-  # Define the full image name once to avoid repetition and errors
   _IMAGE_NAME: ${_REGION}-docker.pkg.dev/${_PROJECT_ID}/${_REPOSITORY}/${_SERVICE_NAME}
 
 steps:
@@ -41,4 +40,3 @@ steps:
 
 options: # This section defines global build options
   logging: CLOUD_LOGGING_ONLY # This is the logging option
-  
